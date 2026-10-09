@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://snxi3e4rllmv"]
+
+[ext_resource type="Texture2D" uid="uid://cgpuv2tx6rvhh" path="res://icon.svg" id="1_8xnhq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ndusb"]
+size = Vector2(128, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4imvi"]
+size = Vector2(128, 128)
+
+[node name="Phisics" type="Node2D" unique_id=1480711213]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1746442458]
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=511759501]
+texture = ExtResource("1_8xnhq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=523768652]
+shape = SubResource("RectangleShape2D_ndusb")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1227446445]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1686977820]
+position = Vector2(-12, 259)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1928329656]
+modulate = Color(0.1492747, 0.54707986, 5.7756904e-07, 1)
+texture = ExtResource("1_8xnhq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=477100684]
+shape = SubResource("RectangleShape2D_4imvi")
