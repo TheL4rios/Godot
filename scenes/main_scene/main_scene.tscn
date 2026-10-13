@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://blknydn31hfku"]
 
 [ext_resource type="PackedScene" uid="uid://c1xm7cp2qbhiw" path="res://scenes/level_1/level_1.tscn" id="1_6iw8k"]
+[ext_resource type="Script" uid="uid://iavlxsfx2wuo" path="res://scenes/main_scene/MainScene.cs" id="1_symxd"]
 
 [node name="MainScene" type="Node2D" unique_id=577399265]
+script = ExtResource("1_symxd")
+levels = [ExtResource("1_6iw8k")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=866149250]
 position = Vector2(1, 0)
 zoom = Vector2(2.45, 2.45)
-
-[node name="Level1" parent="." unique_id=1814251821 instance=ExtResource("1_6iw8k")]
